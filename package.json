@@ -1,0 +1,23 @@
+{
+  "name": "Ohmyfood",
+  "version": "1.0.0",
+  "description": "Thomas Tetrel | Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRyshun/Ohmyfood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRyshun/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/TheRyshun/Ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
