@@ -1,3 +1,21 @@
-.footer {
-    background-color: red;
+footer {
+    background-color: $color-F;
+    margin-top: 20px;
+
+    ul {
+        padding: 24px 96px;
+        li {
+            display: flex;
+            gap: 6px;
+            margin: 8px 0;
+            @include text-s;
+            color: white;
+            list-style-type: none;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
 }

@@ -1,10 +1,8 @@
 /*Config Mise en Page*/
 * {
   margin: 0;
-}
-
-.container {
   max-width: 980px;
+  font-family: "Roboto", sans-serif;
 }
 
 /*Couleurs du site*/
