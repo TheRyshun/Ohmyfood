@@ -1,3 +1,54 @@
-.content {
-    background-color: greenyellow;
+main {
+    margin: 0 20px 0 20px;
+
+    p {
+        @include text-title
+    }
+
+    .FFlex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 40px;
+
+        p {
+            @include text-s;
+            color: white;
+            position: relative;
+            margin: 16px 0 14px 0;
+            left: 10px;
+            padding: 4px 8px 4px 8px;
+            border-radius: 9999px;
+            border: 0;
+            background-color: $primary;
+        }
+
+        .FFlex__Card {
+            display: flex;
+        }
+
+        .FFlex_Element {
+            width: 40%;
+
+        .FFlex__Content {   
+            a {
+                width: 100%;
+                padding: 18px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                gap: 10px;
+                border-radius: 9999px;
+                background-color: white;
+                box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            }
+            a:hover {
+                background-color: #EAEAEA;
+            }
+            
+        }
+        }
+    }
+
 }

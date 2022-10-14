@@ -1,11 +1,10 @@
 /*Config Mise en Page*/
 * {
   margin: 0;
-  padding: 0;
 }
 
 .container {
-  max-width: 425px;
+  max-width: 980px;
 }
 
 /*Couleurs du site*/
