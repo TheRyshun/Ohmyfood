@@ -5,8 +5,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*Couleurs du site*/
-/*Texte size*/
 header {
   display: flex;
   align-items: center;
@@ -102,6 +100,7 @@ main .FFlex {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 40px;
   gap: 40px;
 }
 main .FFlex p {
@@ -134,6 +133,81 @@ main .FFlex .FFlex_Element .FFlex__Content a {
 }
 main .FFlex .FFlex_Element .FFlex__Content a:hover {
   background-color: #EAEAEA;
+}
+
+.RGrid {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  gap: 40px;
+}
+.RGrid .RGrid__Card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  padding-bottom: 25px;
+}
+.RGrid .RGrid__Card a {
+  text-decoration: none;
+  color: black;
+}
+.RGrid .RGrid__Card img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.RGrid .RGrid__Card .RGrid__Content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 20px;
+}
+.RGrid .RGrid__Card .RGrid__Content p {
+  font-size: 14px;
+  font-weight: normal;
+  grid-column: span 2/span 2;
+}
+.RGrid .RGrid__Card .RGrid__Content .heart {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #F9B3B3;
+  height: 175px;
+  width: 175px;
+  transform: rotate(-45deg);
+  animation-name: color;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.RGrid .RGrid__Card .RGrid__Content .heart::after {
+  background-color: #F9B3B3;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  top: 0px;
+  left: 87.5px;
+  animation-name: color;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.RGrid .RGrid__Card .RGrid__Content .heart::before {
+  content: "";
+  background-color: #F9B3B3;
+  border-radius: 50%;
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  top: -87.5px;
+  left: 0px;
+  animation-name: color;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

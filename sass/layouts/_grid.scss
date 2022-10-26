@@ -1,0 +1,51 @@
+.RGrid {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+
+    .RGrid__Card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        padding-bottom: 25px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .RGrid__Content {
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            padding: 20px;
+            p {
+                @include text-s;
+                font-weight :normal;
+                grid-column: span 2 / span 2;
+            }       
+            .heart {
+                margin-left: auto;
+                width: 32px;
+            }   
+            .fa-heart:hover {
+                font-weight: 800;
+                background-image: linear-gradient($primary, $secondary);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}

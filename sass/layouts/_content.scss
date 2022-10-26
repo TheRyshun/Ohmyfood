@@ -9,6 +9,7 @@ main {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
+        margin-bottom: 40px;
         gap: 40px;
 
         p {
@@ -28,7 +29,7 @@ main {
         }
 
         .FFlex_Element {
-            width: 85%;
+            width: 100%;
 
         .FFlex__Content {   
             a {

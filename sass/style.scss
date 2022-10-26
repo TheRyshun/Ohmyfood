@@ -1,4 +1,6 @@
-@import './base/config.scss';
-@import './layouts/header.scss';
-@import './layouts/footer.scss';
-@import './layouts/content.scss';
+@import "./abstracts/mixins" , "./abstracts/variables";
+@import "./base/config.scss", "./base/typography";
+@import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+@import "./layouts/content.scss";
+@import "./layouts/grid";

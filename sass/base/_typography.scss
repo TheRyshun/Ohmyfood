@@ -1,0 +1,17 @@
+@mixin text-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@mixin text-lg {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+@mixin text-m {
+    font-size: 32px;
+}
+
+@mixin text-s {
+    font-size: 24px;
+}
