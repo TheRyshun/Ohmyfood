@@ -1,0 +1,12 @@
+.heart {
+    margin-left: auto;
+    width: 32px;
+}   
+.fa-heart:hover {
+    font-weight: 800;
+    background-image: linear-gradient($primary, $secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: 0.5s;
+}

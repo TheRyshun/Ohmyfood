@@ -1,9 +1,7 @@
 main {
     margin: 0 60px 0 60px;
 
-    p {
-        @include text-title
-    }
+
 
     .FFlex {
         display: flex;

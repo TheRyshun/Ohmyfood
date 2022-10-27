@@ -24,6 +24,16 @@
             border-top-right-radius: 25px;
         }
 
+        .RGrid__News {
+            @include text-s;
+            background-color: #99E2D0;
+            color: #008766;
+            position: absolute;
+            left: 780px;
+            margin-top: 25px;
+            padding: 8px 16px 8px 16px;            
+        }
+
         .RGrid__Content {
             display: grid;
             align-items: center;
@@ -34,18 +44,6 @@
                 font-weight :normal;
                 grid-column: span 2 / span 2;
             }       
-            .heart {
-                margin-left: auto;
-                width: 32px;
-            }   
-            .fa-heart:hover {
-                font-weight: 800;
-                background-image: linear-gradient($primary, $secondary);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                transition-duration: 0.5s;
-            }
         }
     }
 }
