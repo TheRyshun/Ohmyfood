@@ -2,7 +2,6 @@ main {
     margin: 0 60px 0 60px;
 
 
-
     .FFlex {
         display: flex;
         flex-direction: column;
@@ -10,6 +9,10 @@ main {
         margin-bottom: 40px;
         gap: 40px;
 
+        h1 {
+            margin: 40px 40px;
+        }
+        
         p {
             @include text-s;
             color: white;
@@ -28,6 +31,7 @@ main {
 
         .FFlex_Element {
             width: 100%;
+            margin-right: 30px;
 
         .FFlex__Content {   
             a {

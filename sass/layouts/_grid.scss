@@ -1,3 +1,12 @@
+.Restau {
+    background-color: #efeded;
+    padding-top: 40px;
+
+    h1 {
+        margin: 40px 40px;
+    }
+}
+
 .RGrid {
     margin-top: 20px;
     display: flex;
@@ -6,11 +15,13 @@
     gap: 40px;
 
     .RGrid__Card {
+        background-color: white;
         display: flex;
         flex-direction: column;
         box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
         border-radius: 25px;
         padding-bottom: 25px;
+        margin: 0px 40px 40px 40px;
 
         a {
             text-decoration: none;

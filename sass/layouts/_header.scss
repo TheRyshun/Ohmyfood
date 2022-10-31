@@ -56,6 +56,7 @@ header {
 
         button {
             @include btn-explore;
+            margin: 40px 0 60px 0;
         }
 
         button:hover {
