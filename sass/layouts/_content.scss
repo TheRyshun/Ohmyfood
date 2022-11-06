@@ -12,21 +12,25 @@ main {
         h1 {
             margin: 40px 40px;
         }
-        
-        p {
-            @include text-s;
-            color: white;
-            position: relative;
-            margin: 16px 0 14px 0;
-            left: 10px;
-            padding: 4px 8px 4px 8px;
-            border-radius: 9999px;
-            border: 0;
-            background-color: $primary;
-        }
 
         .FFlex__Card {
             display: flex;
+            align-items: center;
+            margin-left: 40px;
+
+            .number {
+                @include text-s;
+                color: white;
+                position: absolute;
+                border-radius: 16px 16px;
+                width: 28px;
+                height: 28px;
+                background-color: $primary;
+                margin-left: -11px;
+                p {
+                    text-align: center;
+                }
+            }
         }
 
         .FFlex_Element {
@@ -40,15 +44,23 @@ main {
                 align-items: center;
                 text-decoration: none;
                 color: black;
-                gap: 10px;
+                gap: 40px;
                 border-radius: 9999px;
-                background-color: white;
+                background-color: #F7F7F7;
                 box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
             }
             a:hover {
-                background-color: #EAEAEA;
+                background-color: #F5EDFF;
             }
-            
+
+            i {
+                font-size: 32px;
+                margin-left: 30px;
+            }
+
+            a:hover i {
+                color: $primary;
+            }
         }
         }
     }

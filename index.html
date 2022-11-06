@@ -11,12 +11,12 @@
 <body>
     <div class="load">
 
-    <div class="load__Placement">
-        <div class="loader">
+        <div class="load__Placement">
+            <div class="loader">
+            </div>
+            <img src="./images/icons/cookie.svg" width="128" height="128" alt="">
         </div>
-        <img src="./images/icons/cookie.svg" width="128" height="128" alt="">
     </div>
-</div>    
     <header>
         <img src="./images/logo/ohmyfood.png" alt="">
 
@@ -44,11 +44,15 @@
                 Fonctionnement
             </h1>
             <div class="FFlex__Card">
-                <p>1</p>
+                <div class="number">
+                    <p>
+                        1
+                    </p>
+                </div>
                 <div class="FFlex_Element">
                     <div class="FFlex__Content">
                         <a href="https://github.com/TheRyshun/ohmyfood.github.io">
-                            <img src="./images/icons/phone.png" width="32" height="32" alt="">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
                             <h2>
                                 Choisissez un restaurant
                             </h2>
@@ -57,11 +61,15 @@
                 </div>
             </div>
             <div class="FFlex__Card">
-                <p>2</p>
+                <div class="number">
+                    <p>
+                        2
+                    </p>
+                </div>
                 <div class="FFlex_Element">
                     <div class="FFlex__Content">
                         <a href="https://github.com/TheRyshun/ohmyfood.github.io">
-                            <img src="./images/icons/phone.png" width="32" height="32" alt="">
+                            <i class="fa-solid fa-list"></i>
                             <h2>
                                 Composez votre menu
                             </h2>
@@ -70,11 +78,15 @@
                 </div>
             </div>
             <div class="FFlex__Card">
-                <p>3</p>
+                <div class="number">
+                    <p>
+                        3
+                    </p>
+                </div>
                 <div class="FFlex_Element">
                     <div class="FFlex__Content">
                         <a href="https://github.com/TheRyshun/ohmyfood.github.io">
-                            <img src="./images/icons/phone.png" width="32" height="32" alt="">
+                            <i class="fa-solid fa-store"></i>
                             <h2>
                                 Dégustez au restaurant
                             </h2>
@@ -86,84 +98,93 @@
 
         <!--Restaurants-->
         <div class="Restau">
-        <h1>
-            Restaurants
-        </h1>
-        <div class="RGrid">
+            <h1>
+                Restaurants
+            </h1>
+            <div class="RGrid">
 
-            <div class="RGrid__Card">
-                <a href="la_palette_du_gout.html">
-                    <div class="RGrid__News">
-                        Nouveau
-                    </div>
-                    <img src="./images/restaurants/card1.jpg" height="200" alt="">
-                    <div class="RGrid__Content">
-                        <h2>La palette du gout</h2>
-                        <div class="heart">
-                            <i class="fa-regular fa-heart fa-2x"></i>
+                <div class="RGrid__Card">
+                    <a href="la_palette_du_gout.html">
+                        <div class="RGrid__News">
+                            Nouveau
                         </div>
-                        <p>Ménilmontant</p>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="RGrid__Card">
-                <a href="./la_note_enchantee.html">
-                    <div class="RGrid__News">
-                        Nouveau
-                    </div>
-                    <img src="./images/restaurants/card2.jpg" height="200" alt="">
-                    <div class="RGrid__Content">
-                        <h2>La note enchantée</h2>
-                        <div class="heart">
-                            <i class="fa-regular fa-heart fa-2x"></i>
+                        <img src="./images/restaurants/card1.jpg" height="200" alt="">
+                        <div class="RGrid__Content">
+                            <h2>La palette du gout</h2>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart fa-2x"></i>
+                            </div>
+                            <p>Ménilmontant</p>
                         </div>
-                        <p>Charonne</p>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
 
 
-            <div class="RGrid__Card">
-                <a href="./a_la_francaise.html">
-                    <img src="./images/restaurants/card3.jpg" height="200" alt="">
-                    <div class="RGrid__Content">
-                        <h2>À la française</h2>
-                        <div class="heart">
-                            <i class="fa-regular fa-heart fa-2x"></i>
+                <div class="RGrid__Card">
+                    <a href="./la_note_enchantee.html">
+                        <div class="RGrid__News">
+                            Nouveau
                         </div>
-                        <p>Cité Rouge</p>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="RGrid__Card">
-                <a href="./le_delice_des_sens.html">
-                    <img src="./images/restaurants/card4.jpg" height="200" alt="">
-                    <div class="RGrid__Content">
-                        <h2>Le délice des sens</h2>
-                        <div class="heart">
-                            <i class="fa-regular fa-heart fa-2x"></i>
+                        <img src="./images/restaurants/card2.jpg" height="200" alt="">
+                        <div class="RGrid__Content">
+                            <h2>La note enchantée</h2>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart fa-2x"></i>
+                            </div>
+                            <p>Charonne</p>
                         </div>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                </a>
+                    </a>
+                </div>
+
+
+                <div class="RGrid__Card">
+                    <a href="./a_la_francaise.html">
+                        <img src="./images/restaurants/card3.jpg" height="200" alt="">
+                        <div class="RGrid__Content">
+                            <h2>À la française</h2>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart fa-2x"></i>
+                            </div>
+                            <p>Cité Rouge</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="RGrid__Card">
+                    <a href="./le_delice_des_sens.html">
+                        <img src="./images/restaurants/card4.jpg" height="200" alt="">
+                        <div class="RGrid__Content">
+                            <h2>Le délice des sens</h2>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart fa-2x"></i>
+                            </div>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                    </a>
+                </div>
+
+
             </div>
-
-
         </div>
-    </div>
     </main>
 
     <footer>
         <ul>
-            <a href="https://github.com/TheRyshun"><img src="./images/logo/ohmyfood-Footer.png" width="364" height="72" alt=""></a>
-            <li><img src="./images/icons/couvert.png" alt="">Proposer un restaurant</li>
-            <li><img src="./images/icons/Handshake.png" alt="">Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+            <a href="https://github.com/TheRyshun"><img src="./images/logo/ohmyfood-Footer.png" width="364" height="72"
+                    alt=""></a>
+            <a href="https://github.com/TheRyshun">
+                <li><img src="./images/icons/couvert.png" alt="">Proposer un restaurant</li>
+            </a>
+            <a href="https://github.com/TheRyshun">
+                <li><img src="./images/icons/Handshake.png" alt="">Devenir partenaire</li>
+            </a>
+            <a href="https://github.com/TheRyshun">
+                <li>Mentions légales</li>
+            </a>
+            <a href="https://github.com/TheRyshun">
+                <li>Contact</li>
+            </a>
         </ul>
     </footer>
 </body>

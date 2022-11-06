@@ -32,8 +32,8 @@ header .en-tete p {
   font-size: 32px;
 }
 header .en-tete img {
-  width: 16px;
-  height: 16px;
+  width: 30px;
+  height: 38px;
 }
 header .explore {
   width: 100%;
@@ -64,10 +64,13 @@ header .explore button {
   text-decoration: none;
   border-radius: 9999px;
   border: 0;
+  padding: 30px;
   margin: 40px 0 60px 0;
 }
 header .explore button:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 5px 8px 13px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
 }
 
 footer {
@@ -90,8 +93,8 @@ footer ul li img {
   width: 32px;
   height: 32px;
 }
-footer ul a img {
-  margin: 30px 0;
+footer ul a {
+  text-decoration: none;
 }
 
 main {
@@ -107,19 +110,23 @@ main .FFlex {
 main .FFlex h1 {
   margin: 40px 40px;
 }
-main .FFlex p {
-  font-size: 24px;
-  color: white;
-  position: relative;
-  margin: 16px 0 14px 0;
-  left: 10px;
-  padding: 4px 8px 4px 8px;
-  border-radius: 9999px;
-  border: 0;
-  background-color: #9356DC;
-}
 main .FFlex .FFlex__Card {
   display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+main .FFlex .FFlex__Card .number {
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  border-radius: 16px 16px;
+  width: 28px;
+  height: 28px;
+  background-color: #9356DC;
+  margin-left: -11px;
+}
+main .FFlex .FFlex__Card .number p {
+  text-align: center;
 }
 main .FFlex .FFlex_Element {
   width: 100%;
@@ -131,13 +138,20 @@ main .FFlex .FFlex_Element .FFlex__Content a {
   align-items: center;
   text-decoration: none;
   color: black;
-  gap: 10px;
+  gap: 40px;
   border-radius: 9999px;
-  background-color: white;
+  background-color: #F7F7F7;
   box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.3);
 }
 main .FFlex .FFlex_Element .FFlex__Content a:hover {
-  background-color: #EAEAEA;
+  background-color: #F5EDFF;
+}
+main .FFlex .FFlex_Element .FFlex__Content i {
+  font-size: 32px;
+  margin-left: 30px;
+}
+main .FFlex .FFlex_Element .FFlex__Content a:hover i {
+  color: #9356DC;
 }
 
 .Restau {
@@ -346,6 +360,11 @@ main .Restaurants__Commander button {
   margin-bottom: 40px;
   padding: 35px 45px 35px 45px;
 }
+main .Restaurants__Commander button:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 8px 13px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
 main li:hover .Restaurants__Check {
   visibility: visible;
   background-color: #99E2D0;
@@ -377,9 +396,8 @@ body {
 
 .load {
   position: absolute;
-  top: 45%;
-  left: 5%;
-  width: 100%;
+  top: 40%;
+  left: 35%;
 }
 .load__Placement {
   display: flex;
@@ -390,7 +408,7 @@ body {
 }
 .load__Placement img {
   position: relative;
-  left: -19.5%;
+  left: -45%;
   animation: cookie 2s linear 1;
   border-radius: 9999px;
 }

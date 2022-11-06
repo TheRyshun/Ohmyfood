@@ -27,8 +27,8 @@ header {
         }
 
         img {
-            width: 16px;
-            height: 16px;
+            width: 30px;
+            height: 38px;
         }
     }
 
@@ -56,11 +56,14 @@ header {
 
         button {
             @include btn-explore;
+            padding: 30px;
             margin: 40px 0 60px 0;
         }
 
         button:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
+            box-shadow: 5px 8px 13px 5px rgba(0, 0, 0, 0.5);
+            opacity: 0.8;
         }
     }
     
