@@ -1,12 +1,49 @@
 .heart {
     margin-left: auto;
-    width: 32px;
-}   
-.fa-heart:hover {
-    font-weight: 800;
-    background-image: linear-gradient($primary, $secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition-duration: 0.5s;
+    position: relative;
+    height: 60px;
+
+    &__empty {
+      opacity: 1;
+      font-size: 28px;
+    }
+    &__full {
+      background: linear-gradient($primary,$secondary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      position: absolute;
+      bottom: 17px;
+      left: 13px;
+      color: transparent;
+      transform: scale(0);
+      opacity: 1;
+    }
+
+    &:hover {
+      .heart__empty {
+        animation: 1.2s disappear both;
+      }
+
+      .heart__full {
+        animation: 1s filling both;
+      }
+    }
+  }
+
+@keyframes filling  {
+from {
+  transform: scale(0);
+}
+to {
+  transform: scale(2);
+}
+}
+
+@keyframes disappear {
+from {
+  opacity: 1;
+}
+to {
+  opacity: 0;
+}
 }

@@ -387,7 +387,6 @@ main li:hover .Restaurants__Check i {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition-duration: 0.5s;
 }
 
 body {
@@ -473,5 +472,4 @@ body {
     visibility: visible;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
