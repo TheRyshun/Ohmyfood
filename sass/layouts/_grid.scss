@@ -46,8 +46,7 @@
         }
 
         .RGrid__Content {
-            display: grid;
-            align-items: center;
+            @include flex(grid, flex-start, center);
             grid-template-columns: repeat(2, minmax(0, 1fr));
             padding: 20px;
             p {

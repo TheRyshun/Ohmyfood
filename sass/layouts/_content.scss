@@ -14,8 +14,7 @@ main {
         }
 
         .FFlex__Card {
-            display: flex;
-            align-items: center;
+            @include flex(flex, flex-start, center);
             margin-left: 40px;
 
             .number {
@@ -40,8 +39,7 @@ main {
         .FFlex__Content {   
             a {
                 padding: 18px;
-                display: flex;
-                align-items: center;
+                @include flex(flex, flex-start, center);
                 text-decoration: none;
                 color: black;
                 gap: 40px;

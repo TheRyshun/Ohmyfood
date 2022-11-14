@@ -8,6 +8,7 @@
 
 header {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   margin: 20px 0px;
@@ -112,6 +113,7 @@ main .FFlex h1 {
 }
 main .FFlex .FFlex__Card {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin-left: 40px;
 }
@@ -135,6 +137,7 @@ main .FFlex .FFlex_Element {
 main .FFlex .FFlex_Element .FFlex__Content a {
   padding: 18px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   text-decoration: none;
   color: black;
@@ -199,6 +202,7 @@ main .FFlex .FFlex_Element .FFlex__Content a:hover i {
 }
 .RGrid .RGrid__Card .RGrid__Content {
   display: grid;
+  justify-content: flex-start;
   align-items: center;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 20px;
@@ -260,6 +264,7 @@ main .Restaurants__Header p {
 }
 main .Restaurants__Header .heart {
   margin-right: auto;
+  display: flex;
 }
 main .Restaurants__Menu {
   position: relative;
@@ -378,17 +383,47 @@ main li:hover .Restaurants__Check i {
 
 .heart {
   margin-left: auto;
-  width: 32px;
+  position: relative;
+  height: 60px;
 }
-
-.fa-heart:hover {
-  font-weight: 800;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
+.heart__empty {
+  opacity: 1;
+  font-size: 28px;
+}
+.heart__full {
+  background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  bottom: 17px;
+  left: 13px;
+  color: transparent;
+  transform: scale(0);
+  opacity: 1;
+}
+.heart:hover .heart__empty {
+  animation: 1.2s disappear both;
+}
+.heart:hover .heart__full {
+  animation: 1s filling both;
 }
 
+@keyframes filling {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 body {
   animation: pop 2.5s ease-in-out 1;
 }
@@ -472,4 +507,5 @@ body {
     visibility: visible;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

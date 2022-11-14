@@ -40,9 +40,7 @@ main {
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
       padding: 40px 0 20px 0;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      @include flex(flex, flex-start, center);
       flex-direction: row;
       padding-left: 100px;
 
@@ -132,9 +130,7 @@ main {
     }
 
     &__Check {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center);
       visibility: hidden;
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px;

@@ -1,6 +1,5 @@
 header {
-    display: flex;
-    align-items: center;
+    @include flex(flex, flex-start, center);
     flex-direction: column;
     margin: 20px 0px;
 
@@ -16,9 +15,7 @@ header {
         padding: 10px 0;
         background-color: $grey;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);    
         gap: 20px;
         box-shadow: inset  0 5px 5px -5px $dgrey;
 
@@ -34,9 +31,7 @@ header {
 
     .explore {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         flex-direction: column;
         text-align: center;
         background-color: $grey;
