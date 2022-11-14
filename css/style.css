@@ -72,6 +72,7 @@ header .explore button:hover {
   transform: scale(1.03);
   box-shadow: 5px 8px 13px 5px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
+  transition: all 2s ease-out;
 }
 
 footer {
@@ -367,6 +368,7 @@ main .Restaurants__Commander button {
 }
 main .Restaurants__Commander button:hover {
   transform: scale(1.03);
+  transition: all 2s ease-out;
   box-shadow: 5px 8px 13px 5px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
