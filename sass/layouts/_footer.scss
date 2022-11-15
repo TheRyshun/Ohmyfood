@@ -11,6 +11,13 @@ footer {
             @include text-lg;
             color: white;
             list-style-type: none;
+
+            p {     
+                img {
+                    width: 364px;
+                    height: 72px;
+                }
+            }
             img {
                 width: 32px;
                 height: 32px;
@@ -18,6 +25,7 @@ footer {
         }
         a {
             text-decoration: none;
+            color: white;
         }
     }
 }

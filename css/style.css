@@ -91,12 +91,17 @@ footer ul li {
   color: white;
   list-style-type: none;
 }
+footer ul li p img {
+  width: 364px;
+  height: 72px;
+}
 footer ul li img {
   width: 32px;
   height: 32px;
 }
 footer ul a {
   text-decoration: none;
+  color: white;
 }
 
 main {
@@ -343,7 +348,7 @@ main .Restaurants__Check {
 main .Restaurants__Check i {
   font-size: 32px;
   color: white;
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 main .Restaurants__Commander {
   display: flex;
