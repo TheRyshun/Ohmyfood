@@ -5,7 +5,8 @@ body {
 .load {
   position: absolute;
   top: 40%;
-  left: 35%;
+  left: 42%;
+
   
   &__Placement {
     @include flex(flex, center, center);
@@ -82,5 +83,21 @@ body {
     }
     100% {
       visibility: visible;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .load {
+      position: absolute;
+      top: 40%;
+      left: 35%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .load {
+      position: absolute;
+      top: 40%;
+      left: 25%;
     }
   }
