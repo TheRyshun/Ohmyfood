@@ -3,7 +3,7 @@
 
 <h1 align="center">🍲 OhMyFood</h1>
 tetrel.free.fr/Ohmyfood/index.html
-###
+
 
 <h2 align="left">🤔 Quel est ce projet?</h2>
 
